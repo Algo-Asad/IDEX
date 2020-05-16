@@ -4,12 +4,12 @@ import {setLanguage} from "../../store/language/languageActions";
 
 const Login = () => {
     const dispatch = useDispatch();
-    const lang = useSelector(state => state.languageReducer.result)
+    const lang = useSelector(state => state.languageReducer.lang)
     const onChange = async (e) => {
         dispatch(await setLanguage(e.target.value))
     }
     return <div>
-        <select value={lang ? lang.lang: 'en'} onChange={onChange}>
+        <select value={lang || 'en'} onChange={onChange}>
             <option value="lorem">lorem</option>
             <option value="en">English</option>
         </select>
