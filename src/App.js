@@ -4,7 +4,7 @@ import './App.css';
 import {useSelector} from "react-redux";
 import Layout from "./components/layout/Layout";
 import Contact from "./components/contact/Contact";
-import Login from "./components/login/login";
+import Login from "./components/login/Login";
 import {
     BrowserRouter as Router,
     Switch,

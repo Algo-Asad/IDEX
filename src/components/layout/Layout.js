@@ -2,8 +2,8 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {useTranslation} from 'react-i18next';
 
-const layout = ({children}) => {
-    const t = useTranslation()
+const Layout = ({children}) => {
+    const {t} = useTranslation('common')
     return <div className="d-flex" id="wrapper">
 
         <div className="bg-light border-right" id="sidebar-wrapper">
@@ -60,4 +60,4 @@ const layout = ({children}) => {
 
 }
 
-export default layout
+export default Layout
